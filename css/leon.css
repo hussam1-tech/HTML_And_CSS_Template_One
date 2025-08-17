@@ -12,10 +12,19 @@
   box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Work Sans", sans-serif;
+}
+.progress-page {
+  position: fixed;
+  top: 0;
+  height: 3px;
+  width: 0;
+  background-color: #2196f3;
+  transition: var(--transition-time);
+  z-index: 9999;
 }
 .container {
   margin-left: auto;
@@ -270,7 +279,7 @@ header .container .links ul li:hover a {
   background-color: #fff;
 }
 .portfolio-content .card .image {
-    overflow: hidden;
+  overflow: hidden;
 }
 .portfolio-content .card img {
   max-width: 100%;
@@ -278,8 +287,8 @@ header .container .links ul li:hover a {
   transition: var(--transition-time, 0.3s);
 }
 .portfolio-content .card img:hover {
-    filter: grayscale(0);
-    transform: rotate(15deg) scale(1.4);
+  filter: grayscale(0);
+  transform: rotate(15deg) scale(1.4);
 }
 .portfolio-content .card .more-info {
   padding: 20px;
