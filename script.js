@@ -1,3 +1,8 @@
+let burgerMenu = document.querySelector("header .links .burger-menu");
+let ulHeader = document.querySelector("header .links ul");
+burgerMenu.onclick = () => {
+  ulHeader.classList.toggle("active");
+}
 let autoYear = document
   .querySelector("footer span")
   .before(document.createTextNode(new Date().getFullYear()));

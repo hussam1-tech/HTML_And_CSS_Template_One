@@ -89,6 +89,7 @@ header .container .links .burger-menu {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+  cursor: pointer;
 }
 header .container .links .burger-menu span {
   background-color: #333;
@@ -118,7 +119,7 @@ header .container .links ul {
   user-select: none;
   z-index: 1;
 }
-header .container .links:hover ul {
+header .container .links ul.active {
   display: block;
 }
 header .container .links ul::before {
