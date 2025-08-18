@@ -72,6 +72,14 @@ body {
 }
 /* End Component */
 /* Start Header */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 0px 15px #a19d9d;
+}
 header .container {
   display: flex;
   justify-content: space-between;
@@ -95,6 +103,7 @@ header .container .links .burger-menu span {
   background-color: #333;
   height: 2px;
   margin-bottom: 6px;
+  pointer-events: none;
 }
 header .container .links .burger-menu span:first-child {
   width: 100%;
